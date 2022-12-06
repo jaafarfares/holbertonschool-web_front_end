@@ -14,7 +14,7 @@
     --font-size-xx-large: 4.8rem;
     }
     
-    html { font-size: 10px;}
+    html { font-size: 62.5%;}
     body {
         scroll-behavior: smooth;
         color: var(--text-color);
