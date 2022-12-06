@@ -172,6 +172,11 @@ ul.row {
     float: left;
     padding: 0.5rem;
 }
+[class^="col-"] {
+    float: left;
+    padding: 0.5rem;
+}
+
 .footer-copyright {
     margin: 0;
     font-size: var(--font-size-small);
@@ -186,15 +191,9 @@ ul.row {
     clear: both;
 }
 
-
-[class^="col-"] {
-    float: left;
-    padding: 0.5rem;
-}
-
 [data-section-theme=“dark”] {
-    background: var(--color-black);
     --text-color: var(--color-white);
     --section-title-color: var(--color-white);
+    background: var(--color-black);
 
 } 
