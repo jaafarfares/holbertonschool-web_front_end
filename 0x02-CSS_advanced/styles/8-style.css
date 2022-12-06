@@ -28,7 +28,7 @@
         font-family: var(--font-family-base);
         font-size: var(--font-size-medium);
         font-weight: var(--font-weight-regular);
-        line-height: min(var(--line-height-base));
+        line-height: var(--line-height-base);
         
         }
         a {
