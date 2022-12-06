@@ -93,6 +93,5 @@
         }
         .container {
 height: 960px;
-margin-left: 40;
-margin-left: 40;
-        }
+margin: auto;
+}
