@@ -266,9 +266,7 @@ text-align: center;
 }
 
 .section-hero {
-    background-size: 300px 100px;
-    width: 90rem;
-    height: auto;
+    background-size: 90re auto;
 }
 
 .section-hero .section-title {
