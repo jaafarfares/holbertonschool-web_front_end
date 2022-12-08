@@ -2,7 +2,7 @@
 
 body {
     color: #3D3D3D;
-    body > .red {
+    .red:first {
         color: #FF0000;
     }
 }
