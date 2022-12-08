@@ -1,0 +1,10 @@
+/* a Sass file that creates a class for each name in the list $list-names */
+
+
+@import "./11-photos";
+
+    @each $tag in $list-names {
+        .photo-#{$tag} {
+            background: image-url("photos/julien.jpg") no-repeat;;
+          }
+        }
