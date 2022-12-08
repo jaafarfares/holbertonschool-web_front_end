@@ -2,7 +2,7 @@
 
 
 
-@mixin ($margin, $padding) {
+@mixin bordered($margin, $padding) {
         margin: $margin;
         padding: $padding;
       }
