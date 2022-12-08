@@ -2,15 +2,15 @@
 
 
 
-@mixin bordered($margin, $padding) {
-        margin: $margin;
-        padding: $padding;
+@mixin mixi($margiin) {
+        margin-left: ($margiin)px;
+        margin-right: ($margiin)px;
       }
       
       body {
-        @include bordered(10px, 10px);  
+        @include mixi(10);  
       }
       
       div {
-        @include bordered(15px, 15px); 
+        @include mixi(15); 
       }
