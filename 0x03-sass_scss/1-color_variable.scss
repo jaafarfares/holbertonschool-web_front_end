@@ -1,0 +1,13 @@
+/*  create a variable and assign a value */
+
+$body_color: #3D3D3D;
+
+
+p {
+    color: $body_color;
+  }
+
+body {
+    color: $body_color;
+  }
+
