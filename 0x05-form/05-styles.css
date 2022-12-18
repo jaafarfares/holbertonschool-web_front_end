@@ -747,8 +747,9 @@ textarea:focus, input[type="text"]:focus, input[type="email"]:focus {
     max-height: 0;
     transition: .3s;
     overflow: hidden;
-}
-.form-group .form-help:focus-within {
+  }
+  
+  .form-group:focus-within .form-help {
     max-height: 20rem;
-    margin: .4rem 0 0;
-}
+    margin: 0.4rem 0 0;
+  }
