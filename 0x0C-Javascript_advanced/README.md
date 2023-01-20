@@ -4,7 +4,7 @@
 
 ##            Learning Objectives
  
-Markup :    * What is lexical scoping in JavaScript
+ Markup : * What is lexical scoping in JavaScript
             * What is closure in JavaScript
             * How to use closure
             * How to chain different closures
