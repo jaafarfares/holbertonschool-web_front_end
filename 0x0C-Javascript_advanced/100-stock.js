@@ -31,4 +31,6 @@ if (item === "Macbook") {
 } else if (item === "iPhone") {
     processPayment.iphone();
 
+} else {
+    console.log('Please renter the item name');
 }
