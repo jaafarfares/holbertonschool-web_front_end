@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+    <head>
+        <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+        <script type="application/javascript">
+            $(document).ready(function(){
+                function createFamilyTree() {
+                    var table = $('<table>');
+                    var headerRow = $('<tr>');
+                    var firstNameHeader = $('<th>').text('Firstname');
+                    var lastNameHeader = $('<th>').text('Lastname');
+                    headerRow.append(firstNameHeader, lastNameHeader);
+                    table.append(headerRow);
+
+                    var first = $('<tr>');
+                    var firstt = $('<td>').text('Guillaume');
+                    var firsttt = $('<td>').text('Salva');
+                    first.append(firstt, firsttt);
+                    table.append(first);
+
+                    
+                    var second = $('<tr>');
+                    var secondd = $('<td>').text('Paulette');
+                    var seconddd = $('<td>').text('Salva');
+                    second.append(secondd, seconddd);
+                    table.append(second);
+
+                    var second = $('<tr>');
+                    var secondd = $('<td>').text('Antoine');
+                    var seconddd = $('<td>').text('Salva');
+                    second.append(secondd, seconddd);
+                    table.append(second);
+
+                    table.appendTo('body');
+                }
+                createFamilyTree();
+            });
+        </script>
+        <meta charset="utf-8" />
+        <title>Task 0</title>
+
+    </head>
+
+    <body>
+    </body>
+
+</html>
