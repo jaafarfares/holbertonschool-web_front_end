@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+    <head>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+            <script type="application/javascript">
+                $(document).ready(function(){
+                  function createSearchForm(){
+                    $("body").append("<form><input type='text'><input type='submit' class='submit'></form>" + "<ul></ul>");
+                    $(".submit").click(function(event) {
+                      event.preventDefault();
+                      queryWikipedia($("input:first").val());
+                    });
+                  }
+              
+                  function addNewArticle(id, title, snippet) {
+                    var parg1 = '<p> <span>id -</span> <b>' + title + '</b> </p> <p>';
+                    $("ul").append("<li>" + parg1 + snippet + "</p> </li>")
+                  }
+              
+                  function queryWikipedia(search) {
+                    var data = {
+                      action: "query",
+                      list: "search",
+                      srsearch: search,
+                      format: "json"
+                    };
+              
+                    $.ajax({
+                      url: "https://en.wikipedia.org/w/api.php",
+                      data: data,
+                      dataType: "jsonp",
+                      success: function(response) {
+                        if (response.error)
+                            return console.log("Empty search!")
+                        var results = response.query.search;
+                        for (var i = 0; i < results.length; i++) {
+                          addNewArticle(results[i].pageid, results[i].title, results[i].snippet);
+                        }
+                      }
+                    });
+                  }
+              
+                  createSearchForm();
+                });
+              </script>
+        <meta charset="utf-8" />
+        <title>Task 0</title>
+
+    </head>
+
+    <body>
+    </body>
+
+</html>
