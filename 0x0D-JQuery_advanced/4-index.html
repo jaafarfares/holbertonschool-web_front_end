@@ -33,7 +33,14 @@
                   
                     $("body").append(table);
                   }
+               
                 createFamilyTree();
+                
+                function replaceFamilyTree() {
+                    $('tbody').html('<tr><td>Gerard</td><td>Bonissa</td></tr>');
+                  }
+                replaceFamilyTree();
+
             });
         </script>
         <meta charset="utf-8" />
