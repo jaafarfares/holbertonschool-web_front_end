@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+    <head>
+        <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+        <script type="application/javascript">
+            $(document).ready(function(){
+                  
+            function createFamilyTree() {
+
+                $( "body" ).append( " <table id='tree'><thead> <tr><th>Firstname</th> <th> Lastname </th></tr></thead></table>" );
+            }
+
+            function addNewMember(firstName, lastName) {
+                
+                var the_x = document.createElement("td");
+                the_x.innerHTML = "(x)";
+                $( "#tree"  ).append( "<tr> <td>" + firstName + "</td> <td>" + lastName + "</td>" + the_x.outerHTML + "</tr>" );
+
+                $("td:last-child").css("background-color", "orange");
+                $("td:last-child").click(function() {
+                $(this).closest('tr').remove();
+                });
+
+            
+               
+
+            }
+            createFamilyTree();
+
+            addNewMember("Guillaume", "Salva");
+            addNewMember("Arielle", "Snizt");
+            addNewMember("Fanette", "Snizt");
+            addNewMember("Gerard", "Snizt");
+            addNewMember("Victor", "Salva");
+
+        });
+        </script>
+        <meta charset="utf-8" />
+        <title>Task 0</title>
+
+    </head>
+
+    <body>
+    </body>
+
+</html>
